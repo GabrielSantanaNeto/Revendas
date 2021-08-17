@@ -35,3 +35,18 @@ VENDA
     - prazo final para pagamento
     - forma de pagamento 
     - Total Pago
+
+
++------------------------------------------------------------------------+
+| BANCO de Dados
+
+create database vendasdayana
+
+CREATE TABLE cliente (
+    idCliente int AUTO_INCREMENT PRIMARY KEY,
+    nome varchar(100) not null,
+    telefone varchar(20)
+)
+CREATE TABLE produto(
+    refProduto int AUTO_INCREMENT PRIMARY KEY,
+)
