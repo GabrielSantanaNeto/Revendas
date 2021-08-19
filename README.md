@@ -1,5 +1,8 @@
 #VendasDayana
 
+
+
+
 Sistema para Controle de vendas 
 
 #########################################
@@ -68,3 +71,14 @@ CREATE TABLE venda(
     formaPagamento varchar(30) not null,
     totalPago float not null
 )
+
+######################################################################
+######################################################################
+
+COLORS
+
+4e5283
+7871AA
+AA9FB1
+CCA7A2
+D9BBF9
