@@ -56,7 +56,7 @@ CREATE TABLE produto(
     dataSaida date not null
 )
 
-CREATE TABLE venda{
+CREATE TABLE venda(
     idVenda int AUTO_INCREMENT PRIMARY KEY,
     refProduto int not null,
     idCliente int not null,
@@ -65,4 +65,4 @@ CREATE TABLE venda{
     prazoPagamento date not null,
     formaPagamento varchar(30) not null,
     totalPago float not null
-}
+)
