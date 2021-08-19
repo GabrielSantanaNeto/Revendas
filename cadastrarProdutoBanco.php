@@ -3,16 +3,16 @@ require 'config.php';
 $refProduto = filter_input(INPUT_POST,'refProduto');
 $descricao = filter_input(INPUT_POST,'descricao');
 $quantidade = filter_input(INPUT_POST,'quantidade');
-echo $precoUnitario = filter_input(INPUT_POST,'precoUnitario');
+$precoUnitario = filter_input(INPUT_POST,'precoUnitario');
+$fornecedor = filter_input(INPUT_POST, 'fornecedor');
 $dataEntrada = filter_input(INPUT_POST,'dataEntrada');
 $dataSaida = filter_input(INPUT_POST,'dataSaida');
-echo $precoUnitario = str_replace(',','.',$precoUnitario);
-//$teste = 2;
-echo"<pre>";
-    print_r($_POST);
-echo "</pre>";
-if($refProduto && $descricao && $quantidade && $precoUnitario && $dataEntrada && $dataSaida){
-    echo"positivo";
+
+$precoUnitario = str_replace(',','.',$precoUnitario);
+
+
+if($refProduto && $descricao && $quantidade && $precoUnitario && $fornecedor && $dataEntrada && $dataSaida){
+    
     
     $sql = $pdo->prepare(
         "INSERT INTO produto(
@@ -20,6 +20,7 @@ if($refProduto && $descricao && $quantidade && $precoUnitario && $dataEntrada &&
         descricao, 
         quantidade,
         precoUnitario,
+        fornecedor,
         dataEntrada,
         dataSaida) 
         VALUES (
@@ -27,23 +28,25 @@ if($refProduto && $descricao && $quantidade && $precoUnitario && $dataEntrada &&
         :descricao,         
         :quantidade,
         :precoUnitario,
+        :fornecedor,
         :dataEntrada,
         :dataSaida)"
     );
-    $sql->bindParam(':refProduto',$refProduto);
-    $sql->bindParam(':descricao',$descricao );
-    $sql->bindParam(':quantidade',$quantidade);
-    $sql->bindParam(':precoUnitario',$precoUnitario);
-    $sql->bindParam(':dataEntrada',$dataEntrada) ;
-    $sql->bindParam(':dataSaida',$dataSaida);
+    $sql->bindValue(':refProduto',$refProduto);
+    $sql->bindValue(':descricao',$descricao );
+    $sql->bindValue(':quantidade',$quantidade);
+    $sql->bindValue(':precoUnitario',$precoUnitario);
+    $sql->bindValue(':fornecedor',$fornecedor);
+    $sql->bindValue(':dataEntrada',$dataEntrada) ;
+    $sql->bindValue(':dataSaida',$dataSaida);
     
     $sql->execute();
 
-    //header("Location:index.php");
+    header("Location:index.php");
 
 }else{
-    echo"negativos";
- //  header("Location:cadastrarProduto.php");
+    
+    header("Location:cadastrarProduto.php");
     exit;
 }
 

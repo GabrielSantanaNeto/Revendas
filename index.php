@@ -10,6 +10,26 @@
     <title>Area inicial</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <a href="index.php">Home</a>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <a href="cadastrarCliente.php">Cadastrar Cliente</a><br><br>
     <a href="cadastrarProduto.php">Cadastrar Produto</a><br><br>
     <br>

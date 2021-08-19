@@ -53,13 +53,14 @@ CREATE TABLE produto(
     descricao varchar(300) not null,
     quantidade int not null,
     precoUnitario float not null,
+    fornecedor varchar(100) not null,
     dataEntrada date not null,
     dataSaida date not null
 )
 
 CREATE TABLE venda(
     idVenda int AUTO_INCREMENT PRIMARY KEY,
-    idProduto int not null,
+    refProduto int not null,
     idCliente int not null,
     dataVenda date not null,
     precoTotal float not null,
