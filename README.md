@@ -48,7 +48,8 @@ CREATE TABLE cliente (
     telefone varchar(20)
 )
 CREATE TABLE produto(
-    refProduto int AUTO_INCREMENT PRIMARY KEY,
+    idProduto int AUTO_INCREMENT PRIMARY KEY,
+    refProduto int not null,
     descricao varchar(300) not null,
     quantidade int not null,
     precoUnitario float not null,
@@ -58,7 +59,7 @@ CREATE TABLE produto(
 
 CREATE TABLE venda(
     idVenda int AUTO_INCREMENT PRIMARY KEY,
-    refProduto int not null,
+    idProduto int not null,
     idCliente int not null,
     dataVenda date not null,
     precoTotal float not null,
