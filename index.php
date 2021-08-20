@@ -3,7 +3,7 @@
     require 'header.php';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,21 +13,6 @@
     <link rel="shortcut icon" href="">
 </head>
 <body>
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <a href="cadastrarCliente.php">Cadastrar Cliente</a><br><br>
     <a href="cadastrarProduto.php">Cadastrar Produto</a><br><br>

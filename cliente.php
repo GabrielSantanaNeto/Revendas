@@ -12,7 +12,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,15 +23,18 @@
 <body>
     
     <div class="sidebar">
-        <a href="">Novo Cliente</a>
+        <a href="cadastrarCliente.php">Novo Cliente</a>
     </div><!-- sidebar-->
+
     <div class="consulta">
-    <h3>Meus Clientes</h3>
+        <h3>Meus Clientes</h3>
         <table>
             <tr class="th">
             <th>Identificador</th>
             <th>Nome</th>
             <th>Telefone</th>
+            <th></th>
+
             
              
             </tr>
@@ -41,6 +44,7 @@
                     <td> <?= $cliente['idCliente']  ?> </td>
                     <td> <?= $cliente['nome']  ?> </td>
                     <td> <?= $cliente['telefone']  ?> </td>
+                    <td><a href="editarCliente.php?id=<?= $cliente['idCliente']  ?>">Editar</a></td>
                     
                 </tr>
 

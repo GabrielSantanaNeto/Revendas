@@ -10,7 +10,7 @@ if($nome && $telefone){
     $sql->bindValue(':telefone', $telefone);
     $sql->execute();
 
-    header("Location:index.php");
+    header("Location:cliente.php");
 
 }else{
     header("Location:cadastrarCliente.php");
