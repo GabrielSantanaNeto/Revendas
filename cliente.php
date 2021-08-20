@@ -23,16 +23,16 @@
 <body>
     
     <div class="sidebar">
-        <h1>teste</h1>
+        <a href="">Novo Cliente</a>
     </div><!-- sidebar-->
     <div class="consulta">
     <h3>Meus Clientes</h3>
         <table>
-            <tr>
+            <tr class="th">
             <th>Identificador</th>
             <th>Nome</th>
             <th>Telefone</th>
-            <th>EDITAR</th>
+            
              
             </tr>
             <?php foreach($lista as $cliente){?>
@@ -41,7 +41,7 @@
                     <td> <?= $cliente['idCliente']  ?> </td>
                     <td> <?= $cliente['nome']  ?> </td>
                     <td> <?= $cliente['telefone']  ?> </td>
-                    <td></td>
+                    
                 </tr>
 
             <?php }  ?>
