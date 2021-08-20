@@ -1,5 +1,6 @@
 <?php
     require 'config.php';
+    require 'header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,14 +14,7 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="index.php">Home</a>
-            <a href="cliente.php">Clientes</a>
-            <a href="produto.php">Produtos</a>
-            <a href="venda.php">Vendas</a>
-        </nav>
-    </header>
+  
 
 
 

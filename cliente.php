@@ -1,11 +1,14 @@
 <?php
     require 'config.php';
+    require 'header.php';
+
     $lista = [];
     $sql = $pdo->query("SELECT * FROM cliente");
 
     if($sql->rowCount() > 0){
         $lista = $sql->fetchAll(PDO::FETCH_ASSOC);
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -15,10 +18,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h3>Meus Clientes</h3>
+    
+    <div class="sidebar">
+        <h1>teste</h1>
+    </div><!-- sidebar-->
     <div class="consulta">
+    <h3>Meus Clientes</h3>
         <table>
             <tr>
             <th>Identificador</th>

@@ -82,3 +82,8 @@ COLORS
 AA9FB1
 CCA7A2
 D9BBF9
+
+FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+font-family: 'Courgette', cursive;
