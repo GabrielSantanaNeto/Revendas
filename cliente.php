@@ -23,7 +23,7 @@
 <body>
     
     <div class="sidebar">
-        <a href="cadastrarCliente.php">Novo Cliente</a>
+        <a href="cadastrarCliente.php"><img src="images/novoCliente.png" alt=""><br> Novo </a>
     </div><!-- sidebar-->
 
     <div class="consulta">

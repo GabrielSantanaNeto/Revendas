@@ -43,6 +43,14 @@ header a:hover{
     display: block;
     float: left;
     position: relative;
+    
+}
+.sidebar a{
+    text-align: center;
+    text-decoration: none;
+}
+.sidebar a:hover{
+    color: #009900;
 }
 .consulta{
     width: 85%;
