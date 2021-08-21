@@ -42,8 +42,24 @@
         <input type="text" name="precoTotal" value="<?= $infoVenda['precoTotal']?>"><br><br>
         <label for="">Prazo para pagamento</label><br><input type="date" name="prazoPagamento" value="<?= $infoVenda['prazoPagamento']?>" ><br><br>
         <label for="">Forma de pagamento</label><br>
-        <input type="radio" name="formaPagamento" value="A vista""><label for="">A vista</label><br>
-        <input type="radio" name="formaPagamento" value="A prazo"><label for="">A prazo</label><br><br>
+        <input type="radio" name="formaPagamento" value="A vista"
+            <?php
+                if($infoVenda['formaPagamento'] == 'A vista'){
+                    echo "checked";
+                }
+            ?>
+        
+        
+        ><label for="">A vista</label><br>
+            
+        <input type="radio" name="formaPagamento" value="A prazo"
+            <?php
+                if($infoVenda['formaPagamento'] == 'A prazo'){
+                    echo "checked";
+                }
+            ?>
+        
+        ><label for="">A prazo</label><br><br>
         <input type="text" name="totalPago" value="<?= $infoVenda['totalPago']?>"><br><br>
         
         <input type="submit" value="Atualizar"><br><br>

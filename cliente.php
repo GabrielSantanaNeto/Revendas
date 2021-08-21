@@ -21,13 +21,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
+
     
     <div class="sidebar">
         <a href="cadastrarCliente.php"><img src="images/novoCliente.png" alt=""><br> Novo </a>
     </div><!-- sidebar-->
-
+    <h3>Meus Clientes</h3>
     <div class="consulta">
-        <h3>Meus Clientes</h3>
+        
         <table>
             <tr class="th">
             <th>Identificador</th>
@@ -53,6 +55,7 @@
     </table>
 
     </div><!--consulta-->
+    </div><!--container-->
     
 
 </body>

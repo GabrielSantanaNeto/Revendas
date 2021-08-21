@@ -23,11 +23,11 @@
 <body>
     
     <div class="sidebar">
-        <a href="cadastrarVenda.php"><img src="images/novoVenda.png" alt=""><br> Novo </a>
+        <a href="cadastrarVenda.php"><img src="images/novoArquivo.png" alt=""><br> Novo </a>
     </div><!-- sidebar-->
-
+    <h3>Minhas Vendas</h3>
     <div class="consulta">
-        <h3>Minhas Vendas</h3>
+        
         <table>
             <tr class="th">
             <th>idVenda</th>

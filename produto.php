@@ -23,11 +23,11 @@
 <body>
     
     <div class="sidebar">
-        <a href="cadastrarProduto.php"><img src="images/novoProduto.png" alt=""><br> Novo </a>
+        <a href="cadastrarProduto.php"><img src="images/novoArquivo.png" alt=""><br> Novo </a>
     </div><!-- sidebar-->
-
+    <h3>Meus Produtos</h3>
     <div class="consulta">
-        <h3>Meus Produtos</h3>
+        
         <table>
             <tr class="th">
             <th>Referencia</th>
@@ -52,7 +52,7 @@
                     <td> <?= $produto['fornecedor']  ?> </td>
                     <td> <?= $produto['dataEntrada']  ?> </td>
                     <td> <?= $produto['dataSaida']  ?> </td>
-                    <td><a href="editarProduto.php?id=<?= $produto['idProduto']  ?>">Editar</a></td>
+                    <td><a href="editarProduto.php?id=<?= $produto['idProduto']  ?>"><img src="images/editarArquivo.png" width="30px" alt=""></a></td>
                     
                 </tr>
 
