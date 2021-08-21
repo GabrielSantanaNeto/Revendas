@@ -14,11 +14,12 @@
 <body>
     <header>
         <nav>
-            <a href="index.php">Home</a>
+            <a href="index.php"><img src="images/dayanalogo.png" width="70px" alt=""></a>
             <a href="cliente.php">Clientes</a>
             <a href="produto.php">Produtos</a>
             <a href="venda.php">Vendas</a>
         </nav>
     </header>
+    <div class="clear"></div>
 </body>
 </html>

@@ -15,7 +15,7 @@ if($nome && $telefone && $idCliente){
     header("Location:cliente.php");
 
 }else{
-    header("Location:cadastrarCliente.php");
+    header("Location:editarCliente.php");
     exit;
 }
 

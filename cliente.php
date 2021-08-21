@@ -44,7 +44,7 @@
                     <td> <?= $cliente['idCliente']  ?> </td>
                     <td> <?= $cliente['nome']  ?> </td>
                     <td> <?= $cliente['telefone']  ?> </td>
-                    <td><a href="editarCliente.php?id=<?= $cliente['idCliente']  ?>">Editar</a></td>
+                    <td><a href="editarCliente.php?id=<?= $cliente['idCliente']  ?>"><img src="images/editarArquivo.png" width="30px" alt=""></a></td>
                     
                 </tr>
 
