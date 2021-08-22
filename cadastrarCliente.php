@@ -10,12 +10,14 @@
     <title>Cadastrar Cliente</title>
 </head>
 <body>
-    <h2>Cadastro de Cliente</h2>
-    <form action="cadastrarClienteBanco.php" method="POST">
-        <input type="text" name="nome" placeholder="Nome do Cliente"><br><br>
-        <input type="number" name="telefone" placeholder="Telefone do Cliente"><br><br>
-        <input type="submit" value="Cadastrar"><br><br>
-    </form>
+    <div class="formulario">
+        <h2>Cadastro de Cliente</h2>
+        <form action="cadastrarClienteBanco.php" method="POST">
+            <input class="form-input" type="text" name="nome" placeholder="Nome do Cliente"><br><br>
+            <input class="form-input" type="number" name="telefone" placeholder="Telefone do Cliente"><br><br>
+            <input class="form-input" type="submit" value="Cadastrar"><br><br>
+        </form>
+    </div> <!--Formulario-->
 </body>
 </html>
 

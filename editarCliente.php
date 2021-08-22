@@ -31,13 +31,15 @@
     <title>Editar Cliente</title>
 </head>
 <body>
-    <h2>Atualizar Cliente</h2>
-    <form action="editarClienteBanco.php" method="POST">
-        <input type="hidden" name="idCliente" value="<?= $infoCliente['idCliente']?>">
-        <input type="text" name="nome" value="<?= $infoCliente['nome']?>"><br><br>
-        <input type="number" name="telefone" value="<?= $infoCliente['telefone']?>"><br><br>
-        <input type="submit" value="Atualizar"><br><br>
-    </form>
+    <div class="formulario">
+        <h2>Atualizar Cliente</h2>
+        <form action="editarClienteBanco.php" method="POST">
+            <input class="form-input" type="hidden" name="idCliente" value="<?= $infoCliente['idCliente']?>">
+            <input class="form-input" type="text" name="nome" value="<?= $infoCliente['nome']?>"><br><br>
+            <input class="form-input" type="number" name="telefone" value="<?= $infoCliente['telefone']?>"><br><br>
+            <input class="form-input" type="submit" value="Atualizar"><br><br>
+        </form>
+    </div> <!--Formulario-->
 </body>
 </html>
 

@@ -42,7 +42,7 @@ if($refProduto && $descricao && $quantidade && $precoUnitario && $fornecedor && 
     
     $sql->execute();
 
-    header("Location:cliente.php");
+    header("Location:produto.php");
 
 }else{
     

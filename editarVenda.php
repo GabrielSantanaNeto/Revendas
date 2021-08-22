@@ -33,36 +33,40 @@
     <title>Atualizar Venda</title>
 </head>
 <body>
-    <h2>Atualizar Venda</h2>
-    <form action="editarVendaBanco.php" method="POST">
-        <input type="hidden" name="idVenda" value="<?= $infoVenda['idVenda']?>">
-        <input type="number" name="refProduto" value="<?= $infoVenda['refProduto']?>"><br><br>
-        <input type="number" name="idCliente" value="<?= $infoVenda['idCliente']?>"><br><br>
-        <label for="">Data da Venda</label><br><input type="date" name="dataVenda" value="<?= $infoVenda['dataVenda']?>" ><br><br>
-        <input type="text" name="precoTotal" value="<?= $infoVenda['precoTotal']?>"><br><br>
-        <label for="">Prazo para pagamento</label><br><input type="date" name="prazoPagamento" value="<?= $infoVenda['prazoPagamento']?>" ><br><br>
-        <label for="">Forma de pagamento</label><br>
-        <input type="radio" name="formaPagamento" value="A vista"
-            <?php
-                if($infoVenda['formaPagamento'] == 'A vista'){
-                    echo "checked";
-                }
-            ?>
-        
-        
-        ><label for="">A vista</label><br>
+    <div class="formulario">
+        <h2>Atualizar Venda</h2>
+        <form action="editarVendaBanco.php" method="POST">
+            <input class="form-input" type="hidden" name="idVenda" value="<?= $infoVenda['idVenda']?>">
+            <input class="form-input" type="number" name="refProduto" value="<?= $infoVenda['refProduto']?>"><br><br>
+            <input class="form-input" type="number" name="idCliente" value="<?= $infoVenda['idCliente']?>"><br><br>
+            <label for="">Data da Venda</label><br>
+                <input class="form-input" type="date" name="dataVenda" value="<?= $infoVenda['dataVenda']?>" ><br><br>
+            <input class="form-input" type="text" name="precoTotal" value="<?= $infoVenda['precoTotal']?>"><br><br>
+            <label for="">Prazo para pagamento</label><br>
+                <input class="form-input" type="date" name="prazoPagamento" value="<?= $infoVenda['prazoPagamento']?>" ><br><br>
+            <label for="">Forma de pagamento</label><br>
+            <input class="form-input radio" type="radio" name="formaPagamento" value="A vista"
+                <?php
+                    if($infoVenda['formaPagamento'] == 'A vista'){
+                        echo "checked";
+                    }
+                ?>
             
-        <input type="radio" name="formaPagamento" value="A prazo"
-            <?php
-                if($infoVenda['formaPagamento'] == 'A prazo'){
-                    echo "checked";
-                }
-            ?>
-        
-        ><label for="">A prazo</label><br><br>
-        <input type="text" name="totalPago" value="<?= $infoVenda['totalPago']?>"><br><br>
-        
-        <input type="submit" value="Atualizar"><br><br>
-    </form>
+            
+            ><label for="">A vista</label><br>
+                
+            <input class="form-input radio" type="radio" name="formaPagamento" value="A prazo"
+                <?php
+                    if($infoVenda['formaPagamento'] == 'A prazo'){
+                        echo "checked";
+                    }
+                ?>
+            
+            ><label for="">A prazo</label><br><br>
+            <input class="form-input" type="text" name="totalPago" value="<?= $infoVenda['totalPago']?>"><br><br>
+            
+            <input class="form-input" type="submit" value="Atualizar"><br><br>
+        </form>
+    </div> <!--Formulario-->
 </body>
 </html>

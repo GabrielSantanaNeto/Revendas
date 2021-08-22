@@ -31,18 +31,22 @@
     <title>Editar Produto</title>
 </head>
 <body>
-    <h2>Atualizar Produto</h2>
-    <form action="editarProdutoBanco.php" method="POST">
-        <input type="hidden" name="idProduto" value="<?= $infoProduto['idProduto']?>">
-        <input type="text" name="refProduto" value="<?= $infoProduto['refProduto']?>"><br><br>
-        <input type="text" name="descricao" value="<?= $infoProduto['descricao']?>"><br><br>
-        <input type="number" name="quantidade" value="<?= $infoProduto['quantidade']?>"><br><br>
-        <input type="text" name="precoUnitario" value="<?= $infoProduto['precoUnitario']?>"><br><br>
-        <input type="text" name="fornecedor" value="<?= $infoProduto['fornecedor']?>"<br><br>
-        <label for="">Data do fornecimento</label><br><input type="date" name="dataEntrada" value="<?= $infoProduto['dataEntrada']?>"><br><br>
-        <label for="">Data de devolução</label><br><input type="date" name="dataSaida" value="<?= $infoProduto['dataSaida']?>"><br><br>
-        <input type="submit" value="Atualizar"><br><br>
-    </form>
+    <div class="formulario">
+        <h2>Atualizar Produto</h2>
+        <form action="editarProdutoBanco.php" method="POST">
+            <input class="form-input" type="hidden" name="idProduto" value="<?= $infoProduto['idProduto']?>">
+            <input class="form-input" type="text" name="refProduto" value="<?= $infoProduto['refProduto']?>"><br><br>
+            <input class="form-input" type="text" name="descricao" value="<?= $infoProduto['descricao']?>"><br><br>
+            <input class="form-input" type="number" name="quantidade" value="<?= $infoProduto['quantidade']?>"><br><br>
+            <input class="form-input" type="text" name="precoUnitario" value="<?= $infoProduto['precoUnitario']?>"><br><br>
+            <input class="form-input" type="text" name="fornecedor" value="<?= $infoProduto['fornecedor']?>"<br><br>
+            <label for="">Data do fornecimento</label><br>
+                <input class="form-input" type="date" name="dataEntrada" value="<?= $infoProduto['dataEntrada']?>"><br><br>
+            <label for="">Data de devolução</label><br>
+                <input class="form-input" type="date" name="dataSaida" value="<?= $infoProduto['dataSaida']?>"><br><br>
+            <input class="form-input" type="submit" value="Atualizar"><br><br>
+        </form>
+    </div> <!--Formulario-->
 </body>
 </html>
 
