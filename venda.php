@@ -3,7 +3,7 @@
     require 'header.php';
 
     $lista = [];
-    $sql = $pdo->query("SELECT * FROM venda");
+    $sql = $pdo->query("SELECT cliente.nome, venda.dataVenda, venda.idVenda, venda.refProduto, venda.precoTotal, venda.prazoPagamento, venda.formaPagamento, venda.totalPago FROM venda INNER JOIN cliente ON venda.idCliente = cliente.idCliente");
 
     if($sql->rowCount() > 0){
         $lista = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -30,14 +30,14 @@
         
         <table>
             <tr class="th">
-            <th>idVenda</th>
-            <th>refProduto</th>
-            <th>idCliente</th>
-            <th>dataVenda</th>
-            <th>precoTotal</th>
-            <th>prazoPagamento</th>
-            <th>formaPagamento</th>
-            <th>totalPago</th>
+            <th>Id-Venda</th>
+            <th>ref-Produto</th>
+            <th>Cliente</th>
+            <th>Data-Venda</th>
+            <th>Preco-Total</th>
+            <th>Prazo-Pagamento</th>
+            <th>Forma-Pagamento</th>
+            <th>Total-Pago</th>
             <th></th>
 
             
@@ -48,7 +48,7 @@
                 <tr>
                     <td> <?= $Venda['idVenda']  ?> </td>
                     <td> <?= $Venda['refProduto']  ?> </td>
-                    <td> <?= $Venda['idCliente']  ?> </td>
+                    <td> <?= $Venda['nome']  ?> </td>
                     <td> <?= $Venda['dataVenda']  ?> </td>
                     <td> <?= $Venda['precoTotal']  ?> </td>
                     <td> <?= $Venda['prazoPagamento']  ?> </td>

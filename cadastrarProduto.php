@@ -18,7 +18,7 @@
     
         <h2>Cadastro de Produto</h2>
         <form action="cadastrarProdutoBanco.php" method="POST">
-            <input  class="form-input" type="text" name="refProduto" placeholder="Referencia do produto"><br><br>
+            <input  class="form-input" type="number" name="refProduto" placeholder="Referencia do produto"><br><br>
             <input class="form-input" type="text" name="descricao" placeholder="Descrição"><br><br>
             <input class="form-input" type="number" name="quantidade" placeholder="Quantidade"><br><br>
             <input class="form-input" type="text" name="precoUnitario" placeholder="Preço Unitário"><br><br>
