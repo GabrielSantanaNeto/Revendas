@@ -11,7 +11,7 @@ $dataSaida = filter_input(INPUT_POST,'dataSaida');
 $precoUnitario = str_replace(',','.',$precoUnitario);
 
 
-if($refProduto && $descricao && $quantidade && $precoUnitario && $fornecedor && $dataEntrada && $dataSaida){
+if( $refProduto && $descricao && $quantidade && isset($precoUnitario) && $fornecedor && $dataEntrada && $dataSaida){
     
     
     $sql = $pdo->prepare(

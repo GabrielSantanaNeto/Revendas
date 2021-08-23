@@ -17,7 +17,7 @@ print_r($_POST);
 $precoTotal = str_replace(',','.',$precoTotal);
 $totalPago = str_replace(',','.', $totalPago);
 
-if ($idVenda && $refProduto && $idCliente && $dataVenda && $precoTotal && $prazoPagamento && $formaPagamento && $totalPago) {
+if ($idVenda && $refProduto && $idCliente && $dataVenda && isset($precoTotal) && $prazoPagamento && $formaPagamento && isset($totalPago)) {
    
     $sql = $pdo->prepare("UPDATE venda  SET refProduto = :refProduto, idCliente = :idCliente,
     dataVenda = :dataVenda, precoTotal = :precoTotal, prazoPagamento = :prazoPagamento, formaPagamento = :formaPagamento,

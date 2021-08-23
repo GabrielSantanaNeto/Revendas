@@ -11,7 +11,7 @@ $dataSaida = filter_input(INPUT_POST,'dataSaida');
 
 $precoUnitario = str_replace(',','.',$precoUnitario);
 
-if($idProduto && $refProduto && $descricao && $quantidade && $precoUnitario && $fornecedor && $dataEntrada && $dataSaida){
+if($idProduto && $refProduto && $descricao && $quantidade && isset($precoUnitario) && $fornecedor && $dataEntrada && $dataSaida){
 
     $sql = $pdo->prepare("UPDATE produto  SET refProduto = :refProduto, descricao = :descricao, quantidade = :quantidade, 
      precoUnitario = :precoUnitario, fornecedor = :fornecedor, dataEntrada = :dataEntrada, dataSaida = :dataSaida WHERE idProduto = :idProduto");

@@ -17,7 +17,7 @@ print_r($_POST);
 $precoTotal = str_replace(',','.',$precoTotal);
 $totalPago = str_replace(',','.', $totalPago);
 
-if($refProduto && $idCliente && $dataVenda && $precoTotal && $prazoPagamento && $formaPagamento && $totalPago){
+if($refProduto && $idCliente && $dataVenda && isset($precoTotal) && $prazoPagamento && $formaPagamento && isset($totalPago)){
     $sql = $pdo->prepare(
         "INSERT INTO venda(
         refProduto,
