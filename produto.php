@@ -30,14 +30,15 @@
         
         <table>
             <tr class="th">
-            <th>Referencia</th>
-            <th>Descrição</th>
-            <th>Quantidade</th>
-            <th>Preço Unit.</th>
-            <th>Fornecedor</th>
-            <th>Entrada</th>
-            <th>Devoluçao</th>
-            <th></th>
+                <th>Código</th>
+                <th>Referencia</th>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Preço Unit.</th>
+                <th>Fornecedor</th>
+                <th>Entrada</th>
+                <th>Devoluçao</th>
+                <th></th>
 
             
              
@@ -45,6 +46,7 @@
             <?php foreach($lista as $produto){?>
             
                 <tr>
+                    <td> <?= $produto['idProduto']  ?> </td>
                     <td> <?= $produto['refProduto']  ?> </td>
                     <td> <?= $produto['descricao']  ?> </td>
                     <td> <?= $produto['quantidade']  ?> </td>
